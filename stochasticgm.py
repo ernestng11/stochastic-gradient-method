@@ -9,7 +9,7 @@ import warnings
 
 numpy.random.seed(42)
 
-cwd = os.chdir('/Users/ernestng/Desktop/NUS/Y2S2/DSA3102/HMWK2')
+cwd = os.chdir('filepath here')
 data = io.loadmat('emaildata.mat')
 ytrain = data['ytrain']  # shape = (3065,1)
 ytest = data['ytest']
@@ -57,7 +57,7 @@ fOld = []  # list of all function values
 grads = []  # list of all gradient values
 ctrlist = []
 acc = []
-tol = 0.1
+tol = 0.001
 ctr = 1  # counter
 batch = 50  # change batch size
 maxit = 10000  # change max iterations
